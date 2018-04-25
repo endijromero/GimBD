@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="estilo.css">
+	<script type="text/javascript" src="funciones.js"></script>
+</head>
+
+<body>
+    <form method="post" action="GimnasioServlet" onsubmit="return validar(event)" >
+	
+		
+		<h1> GIMNASIO REDUX  </h1>
+		<h3> Bienvenido al sitio web de nuestros gimnasio  Crear Rutina </h3>
+                
+                <input type="radio" name="tipo" value="p" id="crear" onclick="crearFormulario(event)" > Rutina Masa Muscular
+		<input type="radio" name="tipo" value="c" id="predet" onclick="crearFormulario(event)" checked> Rutina de Peso.
+                
+    
+                
+               
+		<table align="center" border="2" class="esconder">
+			<tr>
+				<div>
+					<td>
+						<label id='genero_1' type="text">Genero</label>
+					</td>
+					<td>
+						<select name="generoSelect" id="generoSelect">
+							<option></option>
+							<option>Masculino</option>
+                                                        <option>Femenino</option>
+						</select>
+					</td>
+				</div>
+			</tr>
+			<tr>
+				<div align="center">
+					<td> <label id="nombre_1">Nombre y Apellidos:</label></td>
+					<td><input name="nombre" id="nombre"></td>
+				</div>
+			</tr>
+			<tr>
+				<div align="center">
+					<td><label id="tel_1">Telefono:</label></td>
+					<td><input type="number" name="tel" id="tel"></td>
+				</div>
+			</tr>
+			<tr>
+				<div align="center">
+					<td><label id="email_1">E-mail:</label></td>
+					<td><input type="email" name="email" id="email"></td>
+				</div>
+			</tr>
+			
+			<tr>
+				<div align="center">
+					<td><label id="edad_1"> Edad </label></td>
+					<td><input id="edad" type="number" name="edad"></td>
+				</div>
+			</tr>
+                        
+                        <tr>
+				<div align="center">
+					<td><label id="peso_1"> Peso </label></td>
+					<td><input id="peso" type="number" name="peso"></td>
+				</div>
+			</tr>
+                        
+                        <!--
+                        <tr >
+                            <div align='center'>
+                                 <td><label> Problemas de Salud Tronco Inferior </label></td>
+
+                                <td>
+                                    <select>
+                                            <option name="ninguno2" id="ninguno2" value="nin2"> ninguno </option>
+                                            <option name="rodil1a" id="rodilla" value="rod"> rodilla </option>
+                                            <option name="tobillo" id="tobillo" value="tob"> tobillo </option>
+                                            <option name="pantorilla" id="pantorilla" value="pan"> pantorrilla </option>
+                                            <option name="pie" id="pie" value="pi"> pie </option>
+                                            <option name="cadera" id="cadera" value="cad"> cadera </option>
+                                    </select>
+                                </td>
+                            </div>
+                        </tr>
+                        
+                         <tr >                            
+                            <div align='center'>
+                                <td><label> Problemas de Salud Tronco Superior </label></td>
+                                <td>
+                                    <select>
+                                            <option name="ninguno1" id="ninguno1" value="nin1"> ninguno </option>
+                                            <option name="espalda" id="espalda" value="esp"> espalda </option>
+                                            <option name="codos" id="codos" value="cod"> codos </option>
+                                            <option name="brazos" id="brazos" value="bra"> brazos </option>
+                                    </select>
+                                </td>
+                            </div>
+                        </tr>
+                        
+                        -->
+                  
+		</table>
+                    <table border="2">
+                        <tr>
+                            <td>
+                                <h4 id="recomendacion_1"> Tenga en cuenta que estas rutinas fueron establecidas y probadas con
+                                                          personas sin problemas de salud si usted tiene alguna complicacion 
+                                                          medica es recomendable  que visite un medico, el gimnasio no respondera en caso de 
+                                                          lesiones dentro y fuera del establecimiento. </h4>
+                            </td>
+                        </tr>                         
+                    </table>                  
+                <div align="center">
+			<button class="button" type="submit"> Generar Rutina </button>
+		</div>
+                
+	</form>
+        
+    <form method="post" action="ImprimirBD">
+        
+        <div align="center">
+			<button class="button" type="submit"> Ver Mis Datos </button>
+        </div>
+    </form>
+            
+                          
+</body>
+</html>

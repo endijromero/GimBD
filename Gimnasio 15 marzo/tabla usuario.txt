@@ -1,0 +1,7 @@
+CREATE TABLE `usuario` (
+  `con_id` int(11) NOT NULL auto_increment COMMENT 'identificador del usuario',
+  `con_nombre` varchar(30) NOT NULL COMMENT 'nombre del usuario',
+  `con_telefono` varchar(30) NOT NULL COMMENT 'telefono del usuario',
+  `con_email` varchar(150) NOT NULL COMMENT 'email de la casa',
+  PRIMARY KEY  (`con_id`)
+) ENGINE=InnoDB;
